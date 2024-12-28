@@ -20,6 +20,7 @@
   min-height: 100vh;
 }
 </style>
+
 <script>
 import Header from "~/components/header.vue";
 import Footer from "~/components/footer.vue";
