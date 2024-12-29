@@ -37,11 +37,18 @@ export default {
   mounted() {
     if (this.$route.path.includes("/en")) {
       this.lang = "en";
-      localStorage.setItem("currentLang", this.lang);
+      typeof window !== "undefined" &&
+        window.localStorage &&
+        localStorage.setItem("currentLang", this.lang);
     } else if (this.$route.path.includes("/ru")) {
       this.lang = "ru";
-      localStorage.setItem("currentLang", this.lang);
+      typeof window !== "undefined" &&
+        window.localStorage &&
+        localStorage.setItem("currentLang", this.lang);
     } else {
+      typeof window !== "undefined" &&
+        window.localStorage &&
+        localStorage.setItem("currentLang", "en");
       this.lang = this.getCurrentLang();
     }
   },
