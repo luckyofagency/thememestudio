@@ -388,6 +388,7 @@ export default {
       ads: [],
       sites: [],
       videos: [],
+      lang: "en",
     };
   },
   methods: {
@@ -435,10 +436,6 @@ export default {
   props: {
     getCurrentLang: {
       type: Function,
-      required: true,
-    },
-    lang: {
-      type: String,
       required: true,
     },
   },
