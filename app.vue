@@ -27,7 +27,7 @@ import Footer from "~/components/footer.vue";
 export default {
   data() {
     return {
-      lang: "ru",
+      lang: "en",
     };
   },
   components: {
