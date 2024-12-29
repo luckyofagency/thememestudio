@@ -57,7 +57,7 @@ export default {
         typeof window !== "undefined" &&
         window.localStorage &&
         localStorage.getItem("currentLang");
-      return storedLang ? storedLang : "ru";
+      return storedLang ? storedLang : "en";
     },
   },
 };
